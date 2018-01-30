@@ -62,7 +62,6 @@
         }
         .bottom-container {
             background-color:blue;
-            height: 500px;
             width:100%;
             margin-top:20px;
         }
@@ -95,14 +94,33 @@
             background-color:rgb(122, 115, 112);
         }
         .gallery {
-            background: red;
+            background: #FFF;
             float: left;
             height: calc(100% - 30px);
             padding:15px;
-            width: calc(100% - 210px);
+            width: calc(100% - 211px);
+            border-left: 1px solid black;
         }
-
-
+        .gallery ul.row {
+            margin-bottom: 25px;
+            margin-top: 25px;
+            list-style-type:none;
+            text-align:center;
+            width:100%;
+        }
+        .gallery ul.row li {
+            margin-right: 15px;
+            display: inline-block;
+        }
+        .gallery ul.row li > img{
+            height: 150px;
+            width:200px;
+        }
+        .box-shadow {
+            -webkit-box-shadow: 3px 3px 44px 10px rgba(0,0,0,0.75);
+            -moz-box-shadow: 3px 3px 44px 10px rgba(0,0,0,0.75);
+            box-shadow: 3px 3px 44px 10px rgba(0,0,0,0.75);
+        }
     </style>
 </head>
 
@@ -111,7 +129,7 @@
         <span class="logo">LOGO</span>
     </header>
     <div class="main-container">
-        <div class="bio-container">
+        <div class="bio-container box-shadow">
             <div class="avatar">
                 <img src="./img/avatar.png" rel="my avater">
             </div>
@@ -133,11 +151,21 @@
             </aside>
             <div class="gallery">
                 <h3>Gallery</h3>
+                <ul class="row">
+                    <li class="box-shadow"><img src="./img/1.jpg" alt="cat"></li>
+                    <li class="box-shadow"><img src="./img/2.jpg" alt="cat"></li>
+                    <li class="box-shadow"><img src="./img/3.jpg" alt="cat"></li>
+                    <li class="box-shadow"><img src="./img/4.jpg" alt="cat"></li>
+                    <li class="box-shadow"><img src="./img/5.jpg" alt="cat"></li>
+                    <li class="box-shadow"><img src="./img/6.jpg" alt="cat"></li>
+                    <li class="box-shadow"><img src="./img/7.jpg" alt="cat"></li>
+                    <li class="box-shadow"><img src="./img/8.jpg" alt="cat"></li>
+                </ul>
             </div>
         </div>
     </div>
     <footer class="main-footer">
-        <span class="legal-text">Created by Lucas Phan</span>
+        <span class="legal-text">Created by Immanuel Go</span>
     </footer>
 </body>
 
