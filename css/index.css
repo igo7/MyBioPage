@@ -26,7 +26,7 @@ body {
 }
 
 .main-footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -122,11 +122,45 @@ body {
 }
 
 
-
-
-
 /* login page */
 .login-container {
-    height:500px;
-    padding:25px;
+    width: 500px;
+    margin: 200px auto 100px auto;
+    background-color: #ccc;
+
+}
+
+.login-input {
+    width: 100%;
+    height:50px;
+    border-radius: 15px;
+    margin: 70px auto;
+
+}
+
+.btn-login {
+    padding: 15px 30px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+
+}
+
+.login{
+
+}
+
+.main-login-container{
+    width: 100%;
+    height: 100%;
+    background-image:url('../img/bg-login.jpg')
+}
+
+.bottom-login-container{
+
+}
+.login-logo > img {
+    width: 100%;
 }
